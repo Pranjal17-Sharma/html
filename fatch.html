@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>posts</h1>
+    <ul id="ui"></ul>
+</body>
+<!-- <script>
+    fetch('https://fakestoreapi.com/products/1')
+            .then(res=>res.json())
+            // .then(json=>console.log(json))
+
+        .then(product=>{
+data(product)
+        })
+        .catch(error=>{
+            console.log("facting data error",error);
+            
+        })
+        function data(product){
+           const ul= document.getElementById("ui")
+            const list=document.createElement("li")
+            const image=document.createElement("img")
+            image.src=product.image
+            list.textContent= product.title       
+        
+            ul.appendChild(list)
+            ul.appendChild(image)
+        }
+</script> -->
+<script>
+    fetch('https://fakestoreapi.com/products/1')
+            .then(res=>res.json())
+            // .then(json=>console.log(json))
+
+            .then(product=>{
+                data(product)
+            })
+            .catch(error=>{
+                console.log("fetching data error,error",error);
+                
+            })
+
+            function data (product){
+                const ul=document.getElementById("ui")
+                const list=document.createElement("li")
+                const image=document.createElement("img")
+                image.src=product.image
+                list.textContent= product.title
+
+                ul.appendChild(list)
+                ul.appendChild(image)
+            }
+            
+</script>
+</html>
