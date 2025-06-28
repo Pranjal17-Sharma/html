@@ -1,25 +1,26 @@
+// var a=78;                  //types of variables
+// var a=79;
+// console.log(a+a);
+// console.log("nikhil");
 
- const form=document.getElementById("myform").addEventListener('submit',function(e){
-    e.preventDefault();
+// let s=45;
+// let e=75;
+// console.log(s*e);
 
-   const name= document.getElementById("log").value
-   const number= document.getElementById("log2").value
-   const email= document.getElementById("log3").value
-   const password= document.getElementById("log4").value
 
-   if(name==""||number==""||password==""||email==""){
-    console.log("signup faild");
-    alert("error in data")
-    
-   }else{
-    console.log("signup sucessfull");
-    alert("signup successfull")
-    
-   }
-    
-   localStorage.setItem("sname",name)
-   localStorage.setItem("snumber",number)
-   localStorage.setItem("semail",email)
-   localStorage.setItem("spassword",password)
+// const q=12;
+// const x=45;
+// console.log(x/q);
 
-})
+// console.log(45); //number
+// console.log("nikhil"); //string
+// console.log(true); //Boolean
+// let a
+// console.log(a); //undefine
+// let b=null
+// console.log(b); //null
+
+let a = document.getElementById("btn").innerHTML = "click";
+document.getElementById("mi").style.color="blue"
+console.log(a);
+ 
